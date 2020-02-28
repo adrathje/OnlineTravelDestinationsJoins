@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Travel Destination List</title>
+<style>
+input[type=submit], a {
+	background-color: #2B547E;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+	padding: 10px 50px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
+
+body {
+	border: 3px solid black;
+}
+</style>
+</head>
+<body style="width: 40%">
+	<h1>Add a Travel Destination to the List!</h1>
+	<form action="addDestinationServlet" method="post">
+		Country: <input type="text" name="country"> City: <input
+			type="text" name="city"> <br /> <br /> <input type="submit"
+			value="Add Destination">
+	</form>
+	<br />
+	<br />
+	<p style="text-align: center">
+		<a href="viewAllDestinationsServlet">View the complete list of
+			destinations</a> <br /> <a href="viewAllDestinationsServlet">View the
+			complete list</a> <br /> <a href="viewAllListsServlet">View all
+			traveler lists</a> <br /> <a href="addDestinationsForListServlet">Create a
+			new traveler list</a>
+	</p>
+
+</body>
+</html>
